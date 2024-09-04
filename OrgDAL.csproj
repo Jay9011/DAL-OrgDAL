@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Jay9011</Authors>
+    <Copyright>Jay9011</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="1. SQL\" />
+    <Folder Include="ParamClasses\S1Access\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreDAL\CoreDAL.csproj" />
+  </ItemGroup>
+
+</Project>
