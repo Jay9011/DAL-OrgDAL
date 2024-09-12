@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="1. SQL\" />
-    <Folder Include="ParamClasses\S1Access\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +16,18 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CoreDAL\CoreDAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ParamClasses\S1Access\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ParamClasses\S1Access\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ParamClasses\S1Access\**" />
   </ItemGroup>
 
 </Project>
