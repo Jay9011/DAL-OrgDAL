@@ -4,8 +4,10 @@
     END
 GO
 CREATE PROCEDURE [dbo].[SECU_ORG_SEL]
-    @Type			INT					-- 사용 타입
-,	@UpdateID		INT			 = 0	-- 접근 ID
+    @Type			INT					    -- 사용 타입
+,	@UpdateID		INT     = 0	            -- 접근 ID
+,   @Result			INT     = 1     OUTPUT	-- 결과 값
+,   @Message		NVARCHAR(100)	OUTPUT	-- 결과 메시지
 AS
 BEGIN
     SET NOCOUNT ON;
