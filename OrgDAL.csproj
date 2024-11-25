@@ -1,33 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <Authors>Jay9011</Authors>
     <Copyright>Jay9011</Copyright>
   </PropertyGroup>
-
   <ItemGroup>
     <Folder Include="1. SQL\" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.35" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\CoreDAL\CoreDAL.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Remove="ParamClasses\S1Access\**" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Remove="ParamClasses\S1Access\**" />
   </ItemGroup>
-
   <ItemGroup>
     <None Remove="ParamClasses\S1Access\**" />
   </ItemGroup>
-
 </Project>

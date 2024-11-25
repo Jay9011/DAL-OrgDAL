@@ -23,7 +23,7 @@ namespace OrgDAL.Mappers.Classes
                 SQLResult result = await dal.ExecuteProcedureAsync("SECU_ORG_SEL", new SECU_ORG_SEL(){ Type = SECU_ORG_SEL.Types.GetAll });
 
                 // 실패했거나 결과가 없으면 null 반환
-                if (!result.IsSuccess || result.DataSet.Tables.Count == 0)
+                if (!result.IsSuccess || result.DataSet == null || result.DataSet.Tables.Count == 0)
                 {
                     return null;
                 }
@@ -41,7 +41,7 @@ namespace OrgDAL.Mappers.Classes
                     return orgs;
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 throw;
             }

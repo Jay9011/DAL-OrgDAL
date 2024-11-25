@@ -24,6 +24,8 @@ BEGIN
                LocationID  AS 'LocationID',
                OrgCode     AS 'OrgCode'
         FROM Org
+        ;
+        SET @Result = 0;
     END
     
 END
