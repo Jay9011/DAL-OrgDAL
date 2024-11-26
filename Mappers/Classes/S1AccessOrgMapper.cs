@@ -13,10 +13,10 @@ namespace OrgDAL.Mappers.Classes
 {
     public class S1AccessOrgMapper: IOrgMapper
     {
+        ICoreDAL dal = new S1AccessCoreDAL();
+
         public async Task<List<OrgEntity>> GetAllOrg()
         {
-            ICoreDAL dal = new S1AccessCoreDAL();
-
             try
             {
                 // 프로시저 실행

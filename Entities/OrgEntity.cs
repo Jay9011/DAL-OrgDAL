@@ -16,11 +16,11 @@
         /// <summary>
         /// 상위 조직 ID
         /// </summary>
-        public int? ParentOrgID { get; set; }
+        public int ParentOrgID { get; set; }
         /// <summary>
         /// 조직에 지정된 위치 ID
         /// </summary>
-        public int? LocationID { get; set; }
+        public int LocationID { get; set; }
         /// <summary>
         /// 조직 코드
         /// </summary>
