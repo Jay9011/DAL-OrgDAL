@@ -21,7 +21,7 @@ BEGIN
         SELECT OrgID       AS 'OrgID',
                OrgName     AS 'OrgName',
                ParentOrgID AS 'ParentOrgID',
-               LocationID  AS 'LocationID',
+               isnull(LocationID, 0) AS 'LocationID',
                OrgCode     AS 'OrgCode'
         FROM Org
         ;
