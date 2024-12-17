@@ -1,8 +1,8 @@
-﻿using CoreDAL.Interface;
+﻿using CoreDAL.ORM;
 
 namespace OrgDAL.ParamClasses.SECU_WEB
 {
-    public class SECU_ORG_SEL : ISQLParam
+    public class SECU_ORG_SEL : SQLParam
     {
         public enum Types
         {

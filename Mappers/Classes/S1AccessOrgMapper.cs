@@ -4,9 +4,8 @@ using System.Data;
 using System.Threading.Tasks;
 using CoreDAL;
 using CoreDAL.Configuration.Interface;
-using CoreDAL.Models;
-using CoreDAL.Models.DALs;
 using CoreDAL.ORM;
+using CoreDAL.ORM.Extensions;
 using OrgDAL.Entities;
 using OrgDAL.ParamClasses.SECU_WEB;
 
